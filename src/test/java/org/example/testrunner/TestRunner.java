@@ -8,13 +8,11 @@ import io.cucumber.testng.CucumberOptions;
     (
             features = "src/main/resources/featsures_directory",
             glue = "org/example/stepDefinition",
-            tags = "@smack",
+            tags = "@smoke",
             plugin = {
                     "pretty",
                     "html:target/cucumber-reports.html"
-
             }
-
     )
 
 public class TestRunner extends AbstractTestNGCucumberTests {

@@ -33,7 +33,6 @@ public class D05_hoverCategoriesStepDef {
         //div[class="page-title"] h1
     }
 
-
     @Then("Assert that the sub-category {string}title")
     public void assertThatTheSubCategoryTitle(String arg1) {
 //        Assert.assertTrue(hooks.d.findElement(By.xpath("//h1[contains(text(),'Desktops')]")).getText().toLowerCase().trim().contains(arg1));

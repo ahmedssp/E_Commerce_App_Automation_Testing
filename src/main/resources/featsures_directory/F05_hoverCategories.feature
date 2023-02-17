@@ -1,4 +1,4 @@
-
+@smoke
   Feature: hoverCategories Feature
     Scenario: select on of the three main categories click on sub category
       Given  select of the three main categories "Compute" products
