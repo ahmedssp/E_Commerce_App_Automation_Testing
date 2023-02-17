@@ -20,9 +20,11 @@ public class hooks {
         WebDriverManager.chromedriver().setup();
         //2- creat object of chrome driver
         d= new ChromeDriver();
-        //3- implecit wait
+        //3-
+        d.manage().window().maximize();
+        //4- implecit wait
         d.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        //4-open www.google.com
+        //5-open www.google.com
         d.navigate().to("https://demo.nopcommerce.com/");
         //test
 //        System.out.println("Before");

@@ -16,6 +16,7 @@ public class P03_homePage {
 
     @FindBy(className="prices")
     public List<WebElement> prod;
+//    @FindBy()
 
 
 }
