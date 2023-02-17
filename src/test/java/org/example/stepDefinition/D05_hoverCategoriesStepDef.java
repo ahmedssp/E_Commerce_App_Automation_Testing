@@ -12,23 +12,20 @@ import javax.swing.*;
 
 public class D05_hoverCategoriesStepDef {
     P03_homePage handover= new P03_homePage();
-    @Given("select of the three main categories")
-    public void hoverCategories() throws InterruptedException {
-
+    @Given("select of the three main categories {string} products")
+    public void hoverCategories( String arg) throws InterruptedException {
 
         Actions action = new Actions(hooks.d);
-        action.moveToElement(hooks.d.findElement(By.cssSelector("ul[class=\"top-menu notmobile\"] li a[href=\"/computers\"] "))).perform();
-        action.moveToElement(hooks.d.findElement(By.partialLinkText("Compute"))).perform();
-
+//        action.moveToElement(hooks.d.findElement(By.cssSelector("ul[class=\"top-menu notmobile\"] li a[href=\"/computers\"] "))).perform();
+        action.moveToElement(hooks.d.findElements(By.partialLinkText(arg)).get(0)).perform();
         Thread.sleep(1000);
-
-//        hooks.d.findElement(By.cssSelector("a[href=\"/users/1\"]")).click();
 
     }
 
 
     @And("user select random one{string} of the three sub cateogries")
     public void userSelectRandomOneOfTheThreeSubCateogries( String arg) {
+
          hooks.d.findElements(By.partialLinkText(arg)).get(0).click();
 
        // System.out.println(hooks.d.findElements(By.partialLinkText(arg)).get(0).getText());
