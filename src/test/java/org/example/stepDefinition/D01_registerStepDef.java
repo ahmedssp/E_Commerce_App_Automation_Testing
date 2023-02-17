@@ -6,9 +6,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.P01_register;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
+
+import java.util.List;
 
 public class D01_registerStepDef {
     P01_register RG=new P01_register();
@@ -23,17 +27,37 @@ public class D01_registerStepDef {
     public void userEnterFirstNameAndLastName(String FirstName, String LastName) {
         RG.FirstName.sendKeys(FirstName);
         RG.LastName.sendKeys(LastName);
+
     }
     //4-
     @And("user enter date of birth")
     public void userEnterDateOfBirth() {
+        //        //static list
+//   // TO select and press on Drop down list
+// WebElement s =hooks.d.findElement(By.cssSelector("select[name=\"DateOfBirthDay\"] option"));
+//   new Select(s).selectByIndex(22);
+//        System.out.println(s.getAttribute("value")); // print the selected value = 22
 
-        Select seDay=new Select(RG.Day);
-        seDay.selectByIndex(25);
+//        List<WebElement> l=hooks.d.findElements(By.cssSelector("select[name=\"DateOfBirthDay\"] option"));
+//        System.out.println(l.size()); //32
+//        System.out.println(l.get(1).getText()); //1
+//        System.out.println(l.get(1)); //[[ChromeDriver: chrome on WINDOWS (fcf2655a9d778b902df550e2aca40bea)] -> css selector: select[name="DateOfBirthDay"] option]
+//        System.out.println(l.indexOf(0)); //-1
+//
+//        System.out.println(hooks.d.findElement(By.cssSelector("select[name=\"DateOfBirthDay\"] option"))); //[[ChromeDriver: chrome on WINDOWS (fcf2655a9d778b902df550e2aca40bea)] -> css selec
+//        System.out.println(hooks.d.findElement(By.cssSelector("select[name=\"DateOfBirthDay\"] option")).getText()); //day
+//        System.out.println(hooks.d.findElement(By.cssSelector("select[name=\"DateOfBirthDay\"] option")).getAttribute("value").equals("0")); //true
+//        System.out.println(hooks.d.findElement(By.cssSelector("select[name=\"DateOfBirthDay\"] option")).getAttribute("value")); //0
+//        System.out.println(hooks.d.findElements(By.cssSelector("select[name=\"DateOfBirthDay\"] option")).get(0).getText()); //day
 
+        //day
+
+        //Day
+         new Select(RG.Day).selectByIndex(25);
+        //month
         Select seMonth=new Select(RG.month);
         seMonth.selectByIndex(12);
-
+        //year
         Select seYear=new Select(RG.year);
         seYear.selectByValue("1992");
 

@@ -9,8 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class hooks {
+
     //create WebDriver
     public static WebDriver d;
+
     @Before
     public static void  start(){
 
@@ -25,6 +27,7 @@ public class hooks {
         //test
 //        System.out.println("Before");
     }
+
     @After
     public static void  quit() throws InterruptedException {
         Thread.sleep(3000);
