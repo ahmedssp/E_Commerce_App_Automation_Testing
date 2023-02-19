@@ -16,4 +16,3 @@ Feature: followUs Feature
   Scenario:  user open rss page
     When  user opens "RSS" link
     Then  page"https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab
-    
