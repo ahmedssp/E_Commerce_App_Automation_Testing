@@ -16,7 +16,13 @@ public class P03_homePage {
 
     @FindBy(className="prices")
     public List<WebElement> prod;
-//    @FindBy()
+
+    @FindBy(css = "h2[class=\"product-title\"] a")
+    public List<WebElement> producname;
+
+    @FindBy(css = "div[class=\"sku\"] span[class=\"value\"]")
+    public WebElement SDK_NAME;
+
 
 
 }
