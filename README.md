@@ -2,11 +2,13 @@
 
 Created By Ahmed Mostafa Abdellsalame - fab 18, 2023 . Create & configure UI Testing Automation Project.
 
-Automate script with java , Gherkin .
+Automate script with java , Gherkin . by using IntelliJ
+
+Project test Scenarios, features list and Test techniques  :https://drive.google.com/file/d/16mm6AD_TdtJi3U6w50ARVtKKeZ5OFukM/view
 
 Testing app :E-Commerce App Url , "https://demo.nopcommerce.com/" .
 
-Automate E-commerce app website using :
+Automate E-commerce app website using folowing dependencies:
 
 Selenium maven
 "https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java" .
@@ -23,4 +25,4 @@ Web Driver Manager
 Java Faker
 "https://mvnrepository.com/artifact/com.github.javafaker/javafaker/1.0.2" .
 
-Apply pom design pattern in project .
+Apply Page Object Model (POM) design pattern in project .
