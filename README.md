@@ -10,19 +10,15 @@ Testing app :E-Commerce App Url , "https://demo.nopcommerce.com/" .
 
 Automate E-commerce app website using folowing dependencies:
 
-Selenium maven
+- Selenium maven
 "https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java" .
-
-Cucumber for java
+- Cucumber for java
 "https://mvnrepository.com/artifact/io.cucumber/cucumber-java" .
-
-Cucumber TestNG maven
+- Cucumber TestNG maven
 "https://mvnrepository.com/artifact/io.cucumber/cucumber-testng" .
-
-Web Driver Manager
+- Web Driver Manager
 "https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager/5.3.2" .
-
-Java Faker
+- Java Faker
 "https://mvnrepository.com/artifact/com.github.javafaker/javafaker/1.0.2" .
 
 Apply Page Object Model (POM) design pattern in project .
